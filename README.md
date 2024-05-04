@@ -27,3 +27,5 @@ Contributions to this repository are welcome. If you would like to contribute:
 Credits
 
 This repository is a compilation of code provided by the instructor during the DSA course and code written by Rahad Khan sir during the course
+Rahad Khan
+Lecturer, Dept. of CSE
