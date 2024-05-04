@@ -1,9 +1,14 @@
 #include<bits/stdc++.h>
 using namespace std;
+
+
 struct Node{
     int val;
-    Node *left,*right;
+    Node *left;
+    Node *right;
 };
+
+
 Node *addNode(int v){
     Node *newNode = new Node;
     newNode->val = v;
@@ -11,6 +16,8 @@ Node *addNode(int v){
     newNode->right = NULL;
     return newNode;
 }
+
+
 void inOrder(Node *root){
     if(root!=NULL){
         inOrder(root->left);
@@ -18,6 +25,9 @@ void inOrder(Node *root){
         inOrder(root->right);
     }
 }
+
+
+
 void preOrder(Node *root){
     if(root!=NULL){
         cout<<root->val<<"->";
@@ -25,6 +35,10 @@ void preOrder(Node *root){
         preOrder(root->right);
     }
 }
+
+
+
+
 int main(){
     Node *root = NULL;
     root = addNode(12);
